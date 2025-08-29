@@ -7,7 +7,7 @@ function loadPage(page) {
       if (!response.ok) throw new Error("Page not found");
       return response.text();
     })
-    .then(html => {
+    .then(html => { 
       pageContent.innerHTML = html;
       window.scrollTo(0, 0); // scroll top
       attachPageLinks();     // reattach links inside newly loaded HTML
